@@ -15,9 +15,11 @@
     "author": "Maximilian Schwarzmüller",
     "license": "ISC",
     "devDependencies": {
-        "lite-server": "^2.5.4"
+        "dotenv-webpack": "^7.1.0"
     },
     "dependencies": {
+        "@types/googlemaps": "^3.43.3",
+        "axios": "^0.27.2",
         "clean-webpack-plugin": "^4.0.0",
         "css-loader": "^6.7.1",
         "html-webpack-plugin": "^5.5.0",

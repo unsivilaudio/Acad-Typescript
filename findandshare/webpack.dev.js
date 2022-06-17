@@ -1,4 +1,5 @@
 const path = require('path');
+const DotEnv = require('dotenv-webpack');
 const merge = require('webpack-merge-config');
 const commonConfig = require('./webpack.common');
 
@@ -32,6 +33,7 @@ const devConfig = {
     resolve: {
         extensions: ['.js', '.jsx', '.scss', '.css'],
     },
+    plugins: [new DotEnv()],
 };
 
 module.exports = merge(commonConfig, devConfig);
