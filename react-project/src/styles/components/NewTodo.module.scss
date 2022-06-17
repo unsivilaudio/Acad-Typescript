@@ -1,0 +1,42 @@
+.NewTodo {
+    width: 100%;
+    max-width: 76.8rem;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    .FormGroup {
+        flex: 1;
+
+        label {
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 0.7rem;
+        }
+
+        input {
+            font-size: 2rem;
+        }
+    }
+
+    .FormActions {
+        align-self: flex-end;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: #ececec;
+            background: #ad3def;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: #651296;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.TodoList {
+    list-style: none;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+
+    .TodoItem {
+        color: #e23c1b;
+        border-radius: 0 1rem 0 1rem;
+        box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+        background: rgba(0, 0, 0, 0.07);
+        padding: 1.5rem 2.4rem;
+        margin-bottom: 1.4rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            opacity: 0;
+            font-size: 1.5rem;
+            background: transparent;
+            &:hover {
+                color: orangered;
+            }
+        }
+
+        &:hover {
+            button {
+                opacity: 1;
+            }
+        }
+    }
+}
