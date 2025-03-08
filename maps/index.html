@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=%VITE_GOOGLE_API_KEY%&loading=async"
+      defer
+    ></script>
+    <script type="module" src="/src/main.ts"></script>
+    <title>Understanding TypeScript</title>
+  </head>
+  <body class="bg-stone-800 text-stone-100">
+    <div
+      id="map"
+      class="mx-auto my-6 flex h-[20rem] w-[90%] max-w-[45rem] items-center justify-center rounded-sm border border-stone-300"
+    >
+      <p class="text-center text-sm text-stone-200 uppercase">
+        Please enter an address!
+      </p>
+    </div>
+    <form
+      class="mx-auto my-8 flex max-w-[45rem] items-center justify-center gap-4 text-center"
+    >
+      <input
+        type="text"
+        id="address"
+        class="w-full rounded-md border-0 bg-stone-500 px-3 py-1 text-lg outline-0 duration-300 focus:ring-1 focus:ring-blue-500 focus:ring-offset-2"
+        placeholder="123 Somewhere, Someplace, Region 55555"
+      />
+      <button
+        class="shrink-0 cursor-pointer rounded-md bg-blue-500 px-5 py-2 text-sm font-bold shadow-stone-800 drop-shadow-sm duration-300 hover:bg-blue-700 hover:drop-shadow-lg"
+      >
+        SEARCH ADDRESS
+      </button>
+    </form>
+  </body>
+</html>
