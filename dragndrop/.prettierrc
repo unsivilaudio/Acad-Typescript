@@ -1,0 +1,14 @@
+{
+  "tabWidth": 2,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "singleQuote": false,
+        "printWidth": 100
+      }
+    }
+  ]
+}
